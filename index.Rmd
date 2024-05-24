@@ -5,30 +5,22 @@ output: html_document
 
 ### Introduction
 
-An introduction of the problem domain and a description of the variable(s) you are choosing to analyze (and why!)
+In the United States, the prison system reflects profound racial inequalities. Over-policing and policies like the "war on drugs" disproportionately affect people of color. This analysis uses data from the Vera Institute to explore these disparities. We'll focus on total prison population and prison population by race and gender to uncover systemic injustices. These variables highlight the unequal impact of incarceration on marginalized communities. Through data analysis, we aim to contribute to discussions on social justice reform and advocate for equitable policies in the criminal justice system.
 
 ### Summary Information
 
-Write a summary paragraph of findings that includes the 5 values calculated from your summary information R script
-
-These will likely be calculated using your DPLYR skills, answering questions such as: 
-
-- What is the average value of my variable across all the counties (in the current year)?
-- Where is my variable the highest / lowest?
-- How much has my variable change over the last N years?
-
-Feel free to calculate and report values that you find relevant. Again, remember that the purpose is to think about how these measure of incarceration vary by race.
+Our analysis of incarceration data from the Vera Institute reveals significant disparities in the U.S. prison system. Across all counties in the dataset, the average total prison population stands at approximately 361 individuals. The highest total prison population is observed in certain counties, reaching up to 58,068 individuals, while the lowest is significantly lower. Over the past few decades, there has been a notable fluctuation in total prison populations, with an increase observed in recent years. Additionally, when examining prison populations by race and gender, stark inequities emerge. For instance, the average black prison population is substantially higher compared to other racial groups, indicating systemic biases within the criminal justice system. These findings underscore the urgent need for reform to address racial inequalities and promote equitable treatment within the prison system.
 
 ### The Dataset
 
-Who collected the data?  
-How was the data collected or generated?  
-Why was the data collected?  
-How many observations (rows) are in your data?  
-How many features (columns) are in the data?  
-What, if any, ethical questions or questions of power do you need to consider when working with this data?  
+Who collected the data? Vera Institute of Justice
+How was the data collected or generated? The data was likely collected through a combination of methods, including surveys, administrative records, and possibly collaborations with law enforcement agencies and correctional facilities. These sources provide information on various aspects of incarceration, such as prison populations, demographics, and geographical locations.
+Why was the data collected? To provide insights into the state of incarceration in the United States. By analyzing trends and patterns, researchers can identify disparities, assess the effectiveness of policies, and advocate for reforms aimed at promoting fairness and reducing recidivism rates.
+How many observations (rows) are in your data? 153,811 observations.  
+How many features (columns) are in the data? 6 features.
+What, if any, ethical questions or questions of power do you need to consider when working with this data? Researchers must ensure that the privacy and confidentiality of individuals within the criminal justice system are protected. Additionally, there may be power dynamics at play, as the data could potentially be used to reinforce existing biases or stigmatize certain communities. Therefore, it's essential to approach the analysis with sensitivity and a commitment to social justice principles.
 What are possible limitations or problems with this data?   (at least 200 words)
-
+The dataset from the Vera Institute of Justice offers valuable insights into the complexities of the U.S. prison system, but it also comes with several limitations. One significant challenge is the potential incompleteness of the data, as it may not encompass all facets of incarceration, such as pre-trial detention or alternative sentencing programs. Additionally, variations in data quality across jurisdictions and over time can introduce biases and inaccuracies, undermining the reliability of analyses. Moreover, certain populations, such as undocumented immigrants or individuals in rural areas, may be underrepresented in the dataset, limiting the scope and generalizability of findings. Another critical limitation is the lack of contextual information, such as socioeconomic factors or prior criminal history, which is essential for understanding the underlying drivers of incarceration disparities. Furthermore, temporal and spatial variability in incarceration trends must be carefully accounted for to avoid drawing misleading conclusions. Finally, ethical considerations surrounding privacy, confidentiality, and potential stigmatization of incarcerated individuals require careful navigation. Despite these challenges, researchers can mitigate limitations by employing rigorous validation methods, contextualizing findings, and upholding ethical standards throughout their analyses.
 
 ### Trends Over Time Chart
 
