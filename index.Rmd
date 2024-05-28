@@ -12,7 +12,10 @@ In the United States, the prison system reflects profound racial inequalities. O
 ```{r, echo = FALSE, code = readLines("summary.R")}
 ```
 
-Our analysis of incarceration data from the Vera Institute reveals significant disparities in the U.S. prison system. Across all counties in the dataset, the average total prison population stands at approximately 361 individuals. The highest total prison population is observed in certain counties, reaching up to 58,068 individuals, while the lowest is significantly lower. Over the past few decades, there has been a notable fluctuation in total prison populations, with an increase observed in recent years. Additionally, when examining prison populations by race and gender, stark inequities emerge. For instance, the average black prison population is substantially higher compared to other racial groups, indicating systemic biases within the criminal justice system. These findings underscore the urgent need for reform to address racial inequalities and promote equitable treatment within the prison system.
+The dataset contains a total of **`r summary_stats$total_records`** records spanning **`r summary_stats$total_years`** years and covering **`r summary_stats$total_states`** states in the US. The total prison population across all records is approximately **`r summary_stats$total_prison_pop`**. Among these, the total female prison population is **`r summary_stats$total_female_prison_pop`**, and the total male prison population is **`r summary_stats$total_male_prison_pop`**.
+
+This dataset provides valuable insights into the dynamics of the US prison population over time and across different regions. The variations in prison population across states and years can indicate trends in incarceration rates and potentially highlight areas of concern or improvement in the criminal justice system.
+
 
 ### The Dataset
 
