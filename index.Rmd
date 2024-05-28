@@ -12,10 +12,14 @@ In the United States, the prison system reflects profound racial inequalities. O
 ```{r, echo = FALSE, code = readLines("summary.R")}
 ```
 
-The dataset contains a total of **`r summary_stats$total_records`** records spanning **`r summary_stats$total_years`** years and covering **`r summary_stats$total_states`** states in the US. The total prison population across all records is approximately **`r summary_stats$total_prison_pop`**. Among these, the total female prison population is **`r summary_stats$total_female_prison_pop`**, and the total male prison population is **`r summary_stats$total_male_prison_pop`**.
+The dataset contains a total of **`r summary_stats$total_records`** records spanning 
+**`r summary_stats$total_years`** years and covering **`r summary_stats$total_states`** states in the US. 
+The total prison population across all records is approximately **`r summary_stats$total_prison_pop`**. 
+Among these, the total female prison population is **`r summary_stats$total_female_prison_pop`**, 
+and the total male prison population is **`r summary_stats$total_male_prison_pop`**.
+
 
 This dataset provides valuable insights into the dynamics of the US prison population over time and across different regions. The variations in prison population across states and years can indicate trends in incarceration rates and potentially highlight areas of concern or improvement in the criminal justice system.
-
 
 ### The Dataset
 
