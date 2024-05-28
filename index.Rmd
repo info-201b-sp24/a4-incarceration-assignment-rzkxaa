@@ -9,55 +9,59 @@ In the United States, the prison system reflects profound racial inequalities. O
 
 ### Summary Information
 
+```{r, echo = FALSE, code = readLines("summary.R")}
+```
+
 Our analysis of incarceration data from the Vera Institute reveals significant disparities in the U.S. prison system. Across all counties in the dataset, the average total prison population stands at approximately 361 individuals. The highest total prison population is observed in certain counties, reaching up to 58,068 individuals, while the lowest is significantly lower. Over the past few decades, there has been a notable fluctuation in total prison populations, with an increase observed in recent years. Additionally, when examining prison populations by race and gender, stark inequities emerge. For instance, the average black prison population is substantially higher compared to other racial groups, indicating systemic biases within the criminal justice system. These findings underscore the urgent need for reform to address racial inequalities and promote equitable treatment within the prison system.
 
 ### The Dataset
 
+Data Source: https://github.com/melaniewalsh/Neat-Datasets/blob/main/us-prison-pop.csv?raw=true
+
 Who collected the data? Vera Institute of Justice
+
 How was the data collected or generated? The data was likely collected through a combination of methods, including surveys, administrative records, and possibly collaborations with law enforcement agencies and correctional facilities. These sources provide information on various aspects of incarceration, such as prison populations, demographics, and geographical locations.
+
 Why was the data collected? To provide insights into the state of incarceration in the United States. By analyzing trends and patterns, researchers can identify disparities, assess the effectiveness of policies, and advocate for reforms aimed at promoting fairness and reducing recidivism rates.
+
 How many observations (rows) are in your data? 153,811 observations.  
+
 How many features (columns) are in the data? 6 features.
+
 What, if any, ethical questions or questions of power do you need to consider when working with this data? Researchers must ensure that the privacy and confidentiality of individuals within the criminal justice system are protected. Additionally, there may be power dynamics at play, as the data could potentially be used to reinforce existing biases or stigmatize certain communities. Therefore, it's essential to approach the analysis with sensitivity and a commitment to social justice principles.
+
 What are possible limitations or problems with this data?   (at least 200 words)
 The dataset from the Vera Institute of Justice offers valuable insights into the complexities of the U.S. prison system, but it also comes with several limitations. One significant challenge is the potential incompleteness of the data, as it may not encompass all facets of incarceration, such as pre-trial detention or alternative sentencing programs. Additionally, variations in data quality across jurisdictions and over time can introduce biases and inaccuracies, undermining the reliability of analyses. Moreover, certain populations, such as undocumented immigrants or individuals in rural areas, may be underrepresented in the dataset, limiting the scope and generalizability of findings. Another critical limitation is the lack of contextual information, such as socioeconomic factors or prior criminal history, which is essential for understanding the underlying drivers of incarceration disparities. Furthermore, temporal and spatial variability in incarceration trends must be carefully accounted for to avoid drawing misleading conclusions. Finally, ethical considerations surrounding privacy, confidentiality, and potential stigmatization of incarcerated individuals require careful navigation. Despite these challenges, researchers can mitigate limitations by employing rigorous validation methods, contextualizing findings, and upholding ethical standards throughout their analyses.
 
 ### Trends Over Time Chart
 
-Include a chart. Make sure to describe why you included the chart, and what patterns emerged
-
-The first chart that you will create and include will show the trend over time of your variable/topic. Think carefully about what you want to communicate to your user (you may have to find relevant trends in the dataset first!). Here are some requirements to help guide your design:
-
-- Show more than one, but fewer than ~10 trends
-  - This may mean showing the same measure for different locations or different racial groups. Think carefully about a meaningful comparison of locations (e.g., the top 10 counties in a state, top 10 states, etc.)
-- You must have clear x and y axis labels
-- The chart needs a clear title 
-- You need a legend for your different line colors and a clear legend title
-
-When we say "clear" or "human readable" titles and labels, that means that you should not just display the variable name.
-
-Here's an example of how to run an R script inside an RMarkdown file:
-
-``````{r, echo = FALSE, code = readLines("chart1_example.R")}
+```{r, echo = FALSE, code = readLines("chart1.R")}
 ```
+
+**Purpose:**
+The purpose of this chart is to visually depict the changes in the total prison population across different racial groups over time, specifically from 1985 onwards. By presenting the data in a bar plot format with disaggregation by race, the visualization aims to provide a clear understanding of how incarceration rates have shifted for various racial demographics. Additionally, it serves to highlight any disparities or disproportionate representation within the criminal justice system, prompting further examination of systemic issues and fostering discussions around racial justice, policy reform, and societal interventions to address inequalities.
+
+**Insights:**
+The bar plot illustrates the total prison population disaggregated by race and year, offering insights into the temporal trends and racial disparities within the U.S. criminal justice system. Each bar represents a specific racial group's incarceration rate over time, with colors distinguishing between different racial categories. Through this visualization, it becomes apparent how incarceration rates have evolved for various racial groups since 1985. The plot highlights any disproportionate representation of racial minorities in the prison system, shedding light on systemic inequalities and prompting discussions on racial justice, policy reform, and societal interventions aimed at addressing these disparities.
 
 ### Variable Comparison Chart
 
-Include a chart. Make sure to describe why you included the chart, and what patterns emerged
+```{r, echo = FALSE, code = readLines("chart2.R")}
+```
 
-The second chart that you will create and include will show how two different (continuous) variables are related to one another. Again, think carefully about what such a comparison means and what you want to communicate to your user (you may have to find relevant trends in the dataset first!). Here are some requirements to help guide your design:
+**Purpose:**
+The purpose of the scatter plot is to elucidate the relationship between total population and total prison population, shedding light on how changes in population size may correlate with fluctuations in the number of incarcerated individuals. By visually representing these variables, the chart aims to provide a clearer understanding of the dynamics between population growth and imprisonment rates, offering insights into potential societal trends and systemic factors driving incarceration patterns.\
 
-- You must have clear x and y axis labels
-- The chart needs a clear title 
-- If you choose to add a color encoding (not required), you need a legend for your different color and a clear legend title
+**Insights:**
+Insights from the scatter plot reveal varying degrees of correlation between total population and total prison population across different regions and time periods. Regions with higher total populations may not necessarily exhibit proportionally higher prison populations, suggesting potential disparities in incarceration rates influenced by factors such as crime rates, law enforcement policies, and social demographics. Conversely, regions with smaller total populations may demonstrate higher incarceration rates relative to their size, indicating potential concentrations of criminal activity or enforcement practices. Additionally, fluctuations in the relationship between these variables over time may reflect shifts in societal attitudes towards crime, changes in law enforcement practices, or demographic shifts affecting population demographics and criminal justice outcomes. Overall, the scatter plot offers valuable insights into the complex interplay between population dynamics and imprisonment rates, highlighting areas for further investigation and policy consideration.
 
 ### Map
 
-Include a chart. Make sure to describe why you included the chart, and what patterns emerged
+```{r, echo = FALSE, code = readLines("map.R")}
+```
 
-The last chart that you will create and include will show how a variable is distributed geographically. Again, think carefully about what such a comparison means and what you want to communicate to your user (you may have to find relevant trends in the dataset first!). Here are some requirements to help guide your design:
+**Purpose:**
+The purpose of this chart is to provide a visual representation of the distribution of the total prison population across different states in the United States. By aggregating the prison population data and mapping it onto a geographic map, the chart aims to highlight variations in the number of incarcerated individuals across states.
 
-- Your map needs a title
-- Your color scale needs a legend with a clear label
-- Use a map based coordinate system to set the aspect ratio of your map
-
+**Insights:**
+The choropleth map depicts the total prison population aggregated by state, offering insights into the geographic distribution of incarceration rates across the United States. Through color gradients, it highlights variations in prison populations, showcasing regions with higher concentrations of incarcerated individuals. This visualization not only underscores the disparities in incarceration rates but also suggests potential patterns influenced by regional policies, law enforcement practices, and demographic factors. By identifying states with notably high or low prison populations, it facilitates discussions around criminal justice reform and resource allocation, aiming to address systemic issues and promote more equitable outcomes nationwide.
