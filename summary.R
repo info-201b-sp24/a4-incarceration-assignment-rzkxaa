@@ -65,4 +65,4 @@ summary_stats <- list(
 )
 
 # Print the new summary statistics
-print(new_summary_stats)
+print(summary_stats)
