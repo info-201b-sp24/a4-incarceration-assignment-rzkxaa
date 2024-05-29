@@ -5,7 +5,9 @@ output: html_document
 
 ### Introduction
 
-In the United States, the prison system reflects profound racial inequalities. Over-policing and policies like the "war on drugs" disproportionately affect people of color. This analysis uses data from the Vera Institute to explore these disparities. We'll focus on total prison population and prison population by race and gender to uncover systemic injustices. These variables highlight the unequal impact of incarceration on marginalized communities. Through data analysis, we aim to contribute to discussions on social justice reform and advocate for equitable policies in the criminal justice system.
+In the United States, the prison system plays a crucial role in the criminal justice system, impacting individuals, communities, and society at large. Understanding the dynamics of the prison population is essential for policymakers, researchers, and advocates striving for a fair and effective criminal justice system. By analyzing trends in prison population data, we can uncover insights into incarceration rates, disparities, and the broader societal factors influencing the criminal justice system.
+
+For this analysis, we are focusing on the variables related to the prison population in the United States. These variables include total prison population, gender breakdown (male and female), racial demographics (African American, Latinx, White, etc.), and possibly other demographic factors such as age. We have chosen these variables because they provide critical insights into the composition of the prison population and potential disparities within the criminal justice system. By examining trends and patterns in these variables over time and across different regions, we aim to shed light on the dynamics of incarceration rates, the impact of policies, and the need for reforms in the criminal justice system.
 
 ### Summary Information
 
